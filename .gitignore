@@ -1,0 +1,3 @@
+#.gitignore for Java CSCI 22 Main Projects - Midterm and Final
+# Compiled Class Files
+*.class
