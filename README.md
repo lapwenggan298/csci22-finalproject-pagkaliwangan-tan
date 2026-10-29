@@ -12,11 +12,18 @@ Here is our [Game Manual](https://docs.google.com/document/d/1S9nv5Bgh7uldMaor6D
     - Made majority of the classes, their methods, and the basic things required for them.
         - Most were boilerplate code or code reused from our Midterm Project.
     - Ensured that our program met the specified requirements and made adjustments wherever needed.
+    - Also wrote some println texts for checking to see if program is running properly and receiving inputs.
+        - e.g., line 151 of GameFrame.java
+
+        ```java
+        System.out.println("We jumped");
+        ```
+
 2. Tan, Jurvick Dietrich (BiteSizedKaiju)
     - Made the art assets/figures/graphics used in the project.
         - The draw method of each specific polygon/object used.
     - Also wrote some javadoc comments.
-    - Debugged and fixed some errors in collisions.
+    - Debugged and fixed some errors in collision logic.
     - Clean up of code.
     - Fixed the velocity logic for the players.
     - Some println texts for checking to see if program is running properly.
@@ -117,7 +124,7 @@ You may receive a higher grade for more complex networking functionality. Genera
 
 ## **How to Run Our Program**
 
-1. Make sure you have a java on your system, **at least Java JDK 17**.
+1. Make sure you have java on your system, **at least Java JDK 17**.
 2. On Windows, open the Command Prompt, or Windows Powershell
 3. On the machine(s) you wish to open the server and the client(s) on, write the code snippet to compile the java files.
 
@@ -140,6 +147,10 @@ java GameStarter
 ## **Note on Port Connection**
 
 You can run the player applications once or twice on the same machine, should you want to do so.
+
+If prompted for a host or server IP address to connect to, please enter localhost or 127.0.0.1.
+
+We will update the way(s) to connect/determine server IP address, as soon as we remember how to, as we forgot how to do it considering that it's been a long time since we've touched this program.
 
 If prompted for a port number to connect to, please enter the port number: **42069**
 

@@ -67,7 +67,6 @@ public class GameFrame{
         contentPane = (JPanel) frame.getContentPane();
         contentPane.setFocusable(true);
 
-        //Other Methods - Will Update
         gamingCanvas.setPreferredSize(new Dimension(windowWidth, windowHeight));
 
         setUpDrawings();
@@ -75,8 +74,6 @@ public class GameFrame{
         setUpTimer();
 
         contentPane.add(gamingCanvas);
-
-        //setUpListeningForUpdates();
 
         /**Make JFrame/GameFrame visible to client/player.*/
         frame.setTitle("Final Project: Squump - Pagkaliwangan - Tan" + "Player # " + myPlayerID);
@@ -260,12 +257,9 @@ public class GameFrame{
             // Handle horizontal movement based on key states
             if (leftPressed && me.getXPos() > 0) {
                 me.moveX(1); // Move left
-                //checkPlatformCollisions(me);
-
             }
             if (rightPressed && ((me.getXPos() + me.getPlayerWidth()) < windowWidth)) {
                 me.moveX(0); // Move right
-                //checkPlatformCollisions(me);
             }
 
             // If player falls below or is on the floor, correct position
@@ -279,34 +273,13 @@ public class GameFrame{
             me.moveY(me.getVariableVerticalVelocity());
             gamingCanvas.repaint();
 
-            /**for(Platform pD: platformsDrawn){
-                if(pD.isCollidingWithPlayerSide(me)== true){
-                    if((me.getXPos() + me.getPlayerWidth()) >= (pD.getX())){//left of box
-                        me.setXPos((pD.getX()-me.getPlayerWidth()));
-                    }
-                    else if ((me.getXPos())<=(pD.getX() + pD.getWidth())){//right of box
-                        me.setXPos(pD.getX()+pD.getWidth());
-                    }
-
-                }
-                else if(pD.isCollidingWithPlayerTopBot(me) == true){
-                    if((me.getYPos()) <=(pD.getY() + pD.getHeight())){ //bottom of box
-                        me.setVariableVerticalVelocity(0);
-                        me.setYPos(pD.getY()+pD.getHeight());
-                        me.setIsOnGroundFalse();
-                    }
-                    else if ((me.getYPos() + me.getPlayerHeight()) >= pD.getY()){ //top
-                        me.setIsOnGroundTrue();
-                        me.setYPos(pD.getY()  -me.getPlayerHeight());
-                    }
-                }
-            }**/
         }
         });
         moveItTimer.start();
     }
 
-    /** connectToServer method will connect the gameFrame to the gameServer. It will also set up the runnable threads, readFromServer and writeToServer so it can send and receive data to and from the GameServer.
+    /** connectToServer method will connect the gameFrame to the gameServer. 
+     * It will also set up the runnable threads, readFromServer and writeToServer so it can send and receive data to and from the GameServer.
      */
     public void connectToServer(){
         try {
