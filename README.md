@@ -37,6 +37,22 @@ Here is our [Game Manual](https://docs.google.com/document/d/1S9nv5Bgh7uldMaor6D
 
 - 18th of May 2025
 
+## **Table of Contents**
+
+1. [Project Overview](#project-overview)
+    1. [Other Details/Things to Note](#other-details-andor-things-to-note-by-us)
+    2. [Restrictions](#restrictions)
+2. [Project Requirements](#project-requirements)
+    1. [Required Classes](#required-classes-and-description)
+    2. [Regarding Other Classes](#otherregarding-other-classes)
+    3. [Our Custom/Added Classes/Interfaces](#our-customadded-classesinterfaces)
+    4. [Program Requirements](#program-requirements)
+    5. [Networking Requirements](#networking-requirments)
+    6. [Documentation](#documentation)
+3. [How To Run Our Program](#how-to-run-our-program)
+4. [Note on Port Connection](#note-on-port-connection)
+5. [Comments](#have-comments)
+
 ## **Project Overview**
 
 ### **From Specifications**
@@ -55,7 +71,7 @@ Here is our [Game Manual](https://docs.google.com/document/d/1S9nv5Bgh7uldMaor6D
 - Initial code for collision, logic, and methods came from our Midterm Project.
 - Please refer to our Certificate of Authorship (COA), *if available*, for more information on sources we have relied on.
 
-## **Restrictions**
+### **Restrictions**
 
 - **Except** for **Bricks, Pong, Space Invaders, Tetris, Snake,** and **Memory Games**, the game may be based on existing games such as board games, card games, or other graphic multiplayer games, but they cannot be copies of the existing game.
 - They **must** be somehow **modified**.
@@ -77,6 +93,10 @@ Here is our [Game Manual](https://docs.google.com/document/d/1S9nv5Bgh7uldMaor6D
 5. **Game Starter**
     - This class contains the **main** method that will start the game from the player/client's side.
 
+### **Other/Regarding Other Classes**
+
+- You may decide what other classes to have and what to name them, but make sure that the clas names are descriptive of what they are for/what they do.
+
 ### ***Our Custom/Added Classes/Interfaces***
 
 1. DrawingNats
@@ -84,10 +104,6 @@ Here is our [Game Manual](https://docs.google.com/document/d/1S9nv5Bgh7uldMaor6D
     - ArrayList of type DrawingNats also used in GameCanvas.
 2. Platform
     - the level/platform used in the game itself.
-
-### **Other/Regarding Other Classes**
-
-- You may decide what other classes to have and what to name them, but make sure that the clas names are descriptive of what they are for/what they do.
 
 ### **Program Requirements**
 
@@ -122,7 +138,7 @@ You may receive a higher grade for more complex networking functionality. Genera
 - For **how to play our game**, please refer to our [game manual](#csci-22-final-project-multiplayer-network-game).
 - Java files are decently commented with each class and its methods having descriptions.
 
-## **How to Run Our Program**
+## **How To Run Our Program**
 
 1. Make sure you have java on your system, **at least Java JDK 17**.
 2. On Windows, open the Command Prompt, or Windows Powershell
@@ -155,6 +171,8 @@ We will update the way(s) to connect/determine server IP address, as soon as we 
 If prompted for a port number to connect to, please enter the port number: **42069**
 
 This was the port number we have decided on during testing and the presentation. Have fun playing and/or criticizing our project!
+
+## **Have Comments?**
 
 If you have any comments, please leave them in the repository comments if possible. We have not yet decided if we wish to add our contact details/emails. Please be patient as we are still undergraduate students as of the writing and pushing of this program on to GitHub.
 
